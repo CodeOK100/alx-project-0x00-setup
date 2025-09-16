@@ -1,9 +1,10 @@
 import Card from "@/components/Card"
 import Button from "@/components/Button"
-const Landing: React.FC =  () => {
+
+const Landing: React.FC = () => {
   return (
-    <div>
-      <h1 className=" text-xl font-extralight">Landing Page</h1>
+    <main className="flex flex-col h-screen justify-center items-center text-4xl font-semibold">
+      <h1>Landing Page</h1>
       <Button title="Small Button" styles="rounded-sm" />
       <Button title="Medium Button" styles="rounded-md" />
       <Button title="Large Button" styles="rounded-full lg:rounded-lg" />
@@ -12,7 +13,8 @@ const Landing: React.FC =  () => {
       <Card />
       <Card />
       <Card />
-    </div>
+    </main>
   )
 }
+
 export default Landing
